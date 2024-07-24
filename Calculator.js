@@ -84,3 +84,7 @@ console.log(Add("1,2,3,10,12,1888"));
 //(7) Handled delimeter with any length
 //Test Cases
 console.log(Add("//[***]\n1***2***3"));
+
+//(8) Handle more than one delimeter
+//Test cases
+console.log(Add("//[*][%][&]\n1*2%3&123"));

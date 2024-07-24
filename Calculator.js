@@ -21,7 +21,9 @@ function Add(numbers) {
             if(n<0){
                 negatives.push(n);
             }else{
-               sum += n;
+               if(n<=1000){
+                 sum += n;
+               }
             }
         }
     }
@@ -48,4 +50,7 @@ console.log(Add("1\n2,3\n5"));
 console.log(Add("//;\n1;2"));
 
 //(5) Test for negative number to throw error
-console.log(Add("-10,-19,20,30,-40"));
+//console.log(Add("-10,-19,20,30,-40"));
+
+//(6) Ignore number greater than 1000.
+console.log(Add("1,20,1002\n4"));
